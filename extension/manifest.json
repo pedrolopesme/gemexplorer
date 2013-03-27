@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "GemLover",
+  "description": "A Rubygems explorer.",
+  "version": "1.0",
+  "permissions": [
+    "https://rubygems.org/"
+  ],
+  "content_security_policy": "script-src 'self' https://rubygems.org; object-src 'self'",
+  "browser_action": {
+    "default_icon": "ruby.png",
+    "default_popup": "popup.html"
+  }
+}
