@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "GemLover",
+  "name": "gemExplorer",
   "description": "A Rubygems explorer.",
   "version": "1.0",
   "permissions": [

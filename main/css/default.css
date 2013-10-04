@@ -1,10 +1,10 @@
 body
 { width: 280px; overflow: hidden; }
 
-#gemLover
+#gemExplorer
 { width: 910px; height: 300px;  }
 
-#gemLover .board
+#gemExplorer .board
 { width: 300px; height: 300px; float: left; overflow: auto; }
 
 #gemList, #gemView

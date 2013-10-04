@@ -1,4 +1,4 @@
-var app = angular.module('gemLover', []);
+var app = angular.module('gemExplorer', []);
 
 /** Preventing url sanitization in Chrome */
 app.config( function($compileProvider){ 
