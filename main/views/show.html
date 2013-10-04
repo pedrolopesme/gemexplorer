@@ -1,0 +1,23 @@
+<div id="show" class="board">
+
+  <a href="#/results/{{searchTerm}}" data-slider="true" class="back"> Back </a>
+
+  <h3> {{gem.name}} </h3>
+
+  <div>
+    <span>Downloads:<span> <br/> 
+    <p data-gem="downloads">{{gem.downloads}}</p>
+  </div>
+
+  <div>
+    <span>Info:<span> <br/> 
+    <p data-gem="info">{{gem.info}}</p>
+  </div>
+
+  <div>
+    <span> Links </span> <br />
+    <a href="{{gem.project_uri}}" data-gem="rubygems" target="_blank"> RubyGems </a> - 
+    <a href="{{gem.homepage_uri}}" data-gem="homepage" target="_blank"> Homepage </a>
+  </div>
+
+</div>

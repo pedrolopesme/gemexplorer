@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="gemLover" ng-csp>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <!-- Vendors -->
+        <script src="vendors/angular/angular.min.js"></script>        
+        <script src="vendors/angular/angular-resource.min.js"></script>   
+
+        <!-- Configs -->
+        <script src="config/app.js"></script>
+        <script src="config/routes.js"></script>
+
+        <!-- Libs -->
+        <script src="libs/rubyGemsClient/curl.js"></script>
+        <script src="libs/rubyGemsClient/routes.js"></script>              
+        <script src="libs/rubyGemsClient/client.js"></script>              
+
+        <!-- Controllers -->
+        <script src="controllers/index.js"></script>
+        <script src="controllers/results.js"></script>
+        <script src="controllers/show.js"></script>
+
+        <!-- Styles -->
+        <link type='text/css' rel='stylesheet' href='css/default.css' />
+    </head>
+    <body>
+        <div id="gemLover" ng-view></div>
+    </body>
+</html>
