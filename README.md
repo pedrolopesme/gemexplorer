@@ -1,5 +1,6 @@
-gemExplorer
-===========
+# gemExplorer [![Build Status](https://travis-ci.org/pedrolopesme/gemexplorer.png?branch=master)](https://travis-ci.org/pedrolopesme/gemexplorer)
+
+## Description
 
 With gemExplorer you can make searches on rubygems.org's api through a simple extension of Google Chrome. 
 
