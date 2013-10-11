@@ -1,0 +1,13 @@
+<div id="list" class="board">
+
+    <a href="#/" data-slider="true" class="back"> Back </a>
+
+    <h3> Search Results for "{{searchTerm}}" </h3>
+
+    <ul>
+        <li ng-repeat="gem in foundItems"> 
+            <a href="#/show/{{searchTerm}}/{{gem.name}}" data-slider="true"> {{gem.name}} </a> 
+        </li>
+    </ul>
+
+</div>
