@@ -1,0 +1,50 @@
+/** Search Page */
+
+#search .sub-header { 
+	text-align: center;
+
+} 
+
+#search form {
+	margin: 15px 0 45px 0;
+}
+
+#search form #searchTerm {
+	border: none;
+	border-bottom: 1px #DDDDDD solid;
+	background-color: transparent;
+	font-size: 17px;
+	padding: 10px 0;
+	text-align: center;
+	margin: auto;
+	display: block;
+	width: 323px;
+}
+
+#search form #searchTerm:focus {
+    outline-width: 0;
+}
+
+#search .footer {
+	border-top: 1px solid #DDDDDD;
+}
+
+#search .footer a {
+	opacity:0.5;
+	color: #666;
+	font-size: 13px;
+	display: block;
+	float: left;
+	padding: 10px 0;
+	width: 49%;
+	text-align: center;
+}
+
+#search .footer a:hover {
+	opacity:0.9;
+}
+
+#search .footer a img {
+	vertical-align: middle;
+	margin-right: 5px;
+}

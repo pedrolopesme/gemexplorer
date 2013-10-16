@@ -1,13 +1,25 @@
-<div id="list" class="board">
+<div id="list">
 
-    <a href="#/" data-slider="true" class="back"> Back </a>
+	<div class="header">
+		 <a href="#/" class="back"> 
+  		<img src="imgs/icons/arrow_white_left.jpg">
+  	</a>
+	</div>
 
-    <h3> Search Results for "{{searchTerm}}" </h3>
+	<div class="sub-header arrow left">
+    <a href="#/results/{{searchTerm}}" class="refresh"> <img src="imgs/icons/refresh_white.jpg"> </a>
+		<span class="total"> 0 </span> result(s) found for <i>"{{searchTerm}}"</i>.
+	</div>	
 
-    <ul>
-        <li ng-repeat="gem in foundItems"> 
-            <a href="#/show/{{searchTerm}}/{{gem.name}}" data-slider="true"> {{gem.name}} </a> 
-        </li>
-    </ul>
+  <ul id="resultsList">
+    <li ng-repeat="gem in foundItems"> 
+      <a href="#/show/{{searchTerm}}/{{gem.name}}" class="gold">
+        <img src="imgs/icons/arrow_blue_right.png">
+        <span class="gemName"> {{gem.name}} </span> <br>
+        <span class="gemDownloads"> <b> {{gem.downloads}} </b> download(s) </span>
+        <div class="clearfix"></div>
+      </a>
+    </li>
+  </ul>
 
 </div>

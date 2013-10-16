@@ -3,11 +3,11 @@
 angular.module('gemExplorerApp')
   .controller('ResultsCtrl', function ($scope, $location, $routeParams) {
 
-    // Private : RubyGemClient
-    var client = new RubyGemsClient();
+    // RubyGemClient - It's public in order to be injectable by tests.
+    $scope.client = $scope.client || new RubyGemsClient();
 
     // Injecting results into global scope.
     $scope.searchTerm = $routeParams.searchTerm;
-    $scope.foundItems = client.findAll($scope.searchTerm);
+    $scope.foundItems = $scope.client.findAll($scope.searchTerm);
 
   });

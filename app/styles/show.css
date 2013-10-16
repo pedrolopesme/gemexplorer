@@ -1,0 +1,95 @@
+/** Show Page */
+
+#show .sub-header {
+	height: 24px;
+}
+
+#show .sub-header.arrow {
+	padding-bottom: 39px;
+	background-position: 0px 64px;
+}
+
+#show .gemName {
+	font-size: 23px;
+	font-weight: bold;
+}
+
+#show .gemVersion{
+	float: right;
+	margin: 15px 5px 0 0;
+}
+
+#show .gemInstall {
+	color: #5FBFD7;
+	font-size: 23px;
+	width: 350px;
+	margin: 0 auto;
+	font-weight: normal;
+	padding: 10px 0;
+	text-align: center;
+}
+
+#show .gemDescription {
+	color: #999999;
+	font-size: 15px;
+	border-bottom: 1px solid #DDDDDD;
+	border-top: 1px solid #DDDDDD;
+	margin: 0 auto;
+	padding: 12px 5px;
+	width: 320px;
+}
+
+#show .gemfileConfig {
+	color: #999999;
+	font-size: 12px;
+	margin: 0 auto;
+	padding: 12px 5px;
+	width: 320px;
+}
+
+#show .gemfileConfig .command {
+	color: #535353;
+	font-weight: bold;
+	margin: 0 5px;
+}
+
+#show .gemfileConfig .clipboardCopy {
+	display: inline-block;
+	float: right;
+	color: #999999;
+}
+
+#show .gemfileConfig .clipboardCopy img {
+	vertical-align: middle;
+	margin: 0 2px;
+}
+
+#show .footer {
+	background-color: #56C0D4;
+	padding: 5px 5px;
+	margin-top: 15px;
+}
+
+#show .footer img {
+	vertical-align: middle;
+}
+
+#show .footer ul {
+	display: inline;
+}
+
+#show .footer li {
+	border-right: 1px dotted #fff;
+	display: inline;
+	padding: 0 3px 0 7px;
+	height: 15px;
+}
+
+#show .footer li:last-child {
+	border: none;
+}
+
+#show .footer li a {
+	color: #fff;
+	font-size: 14px;
+}

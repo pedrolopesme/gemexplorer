@@ -4,8 +4,8 @@ angular.module('gemExplorerApp', [])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'views/search.html',
+        controller: 'SearchCtrl'
       })
       .when('/results/:searchTerm', {
         templateUrl: 'views/results.html',
@@ -14,6 +14,10 @@ angular.module('gemExplorerApp', [])
       .when('/show/:searchTerm/:gemName', {
         templateUrl: 'views/show.html',
         controller: 'ShowCtrl'
+      })
+      .when('/about', {
+        templateUrl: 'views/about.html',
+        controller: 'AboutCtrl'
       })
       .otherwise({
         redirectTo: '/'

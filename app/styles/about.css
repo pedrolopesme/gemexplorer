@@ -1,0 +1,53 @@
+.page {
+	margin: 0 auto;
+	width: 340px;
+	padding-bottom: 15px;
+}
+
+.content_block {
+	border-bottom: 1px solid #DDDDDD;
+	color: #999999;
+	font-size: 15px;
+	font-weight: 300;
+	padding-bottom: 14px;
+}
+
+.content_block:last-child {
+	border: none;
+}
+
+.techs {
+	margin: 15px 0px;
+	height: 50px;
+}
+
+.techs li {
+	display: block;
+	float: left;
+	margin: 5px 5px;
+}
+
+.techs li a {
+	background-color: #999999;
+	color: #fff;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+	padding: 2px 6px;
+	font-size: 13px;
+}
+
+.techs li a:hover {
+	background-color: #666;
+}
+
+.developers li {
+	font-size: 13px;
+}
+
+.developers li img {
+	vertical-align: middle;
+}
+
+.developers li .social{
+	float: right;
+}

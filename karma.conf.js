@@ -14,7 +14,16 @@ module.exports = function(config) {
       'app/bower_components/angular/angular.js',
       'app/bower_components/angular-mocks/angular-mocks.js',
       'app/bower_components/sinon/lib/sinon.js',
-      'app/bower_components/sinon/lib/sinon/*.js',
+      'app/bower_components/sinon/lib/sinon/assert.js',
+      'app/bower_components/sinon/lib/sinon/call.js',
+      'app/bower_components/sinon/lib/sinon/collection.js',
+      'app/bower_components/sinon/lib/sinon/match.js',
+      'app/bower_components/sinon/lib/sinon/sandbox.js',
+      'app/bower_components/sinon/lib/sinon/spy.js',
+      'app/bower_components/sinon/lib/sinon/stub.js',
+      'app/bower_components/sinon/lib/sinon/test.js',
+      'app/bower_components/sinon/lib/sinon/test_case.js',
+      'app/bower_components/sinon/lib/sinon/mock.js',
       'app/bower_components/sinon/lib/sinon/**/*.js',
       'app/scripts/*.js',
       'app/scripts/**/*.js',
@@ -27,7 +36,6 @@ module.exports = function(config) {
 
     // list of files / patterns to exclude
     exclude: [
-      'app/bower_components/sinon/lib/sinon/mock.js' // it's buggy and I don't use.
     ],
 
     // web server port

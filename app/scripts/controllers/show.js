@@ -3,11 +3,11 @@
 angular.module('gemExplorerApp')
   .controller('ShowCtrl', function ($scope, $location, $routeParams) {
 
-	// Private : RubyGemClient
-	var client = new RubyGemsClient();
+  // RubyGemClient - It's public in order to be injectable by tests.
+  $scope.client = $scope.client || new RubyGemsClient();
 
 	// Inject params to be used in view
 	$scope.searchTerm = $routeParams.searchTerm;
-	$scope.gem = client.findOne($routeParams.gemName);
+	$scope.gem  			= $scope.client.findOne($routeParams.gemName);
 
 });

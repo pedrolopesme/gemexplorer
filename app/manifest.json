@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "gemExplorer",
   "description": "A Rubygems explorer.",
-  "version": "1.0",
+  "version": "0.1",
   "permissions": [
     "https://rubygems.org/"
   ],

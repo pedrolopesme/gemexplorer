@@ -1,0 +1,57 @@
+/** Results Page */
+
+#resultsList, #resultsList li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#resultsList a {
+	border-bottom: 1px solid #F4F4F4;
+	display: block;
+	padding: 5px 0 5px 40px;
+	background-repeat: no-repeat;
+	background-position-y: center;
+	background-position-x: 10px;
+}	
+
+#resultsList a.gold {
+	background-image: url(../imgs/icons/medal_gold.png);
+} 
+
+#resultsList a.silver {
+	background-image: url(../imgs/icons/medal_silver.png);
+} 
+
+#resultsList a.bronze {
+	background-image: url(../imgs/icons/medal_bronze.png);
+} 
+
+#resultsList a.others {
+	background-image: url(../imgs/icons/medal_others.png);
+} 
+
+#resultsList a:hover {
+	background-color: #F4F4F4;
+}
+
+#resultsList img {
+	float: right;
+	margin: 12px 10px 0 0;
+}
+
+#resultsList .gemName {
+	font-size: 18px;
+	font-weight: bold;
+	color: #555;
+	clear: right;
+}
+
+#resultsList .gemDownloads {
+	font-size: 12px;
+	color: #999;
+}
+
+#resultsList .gemDownloads b {
+	color: #666;	
+}

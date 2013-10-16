@@ -1,0 +1,117 @@
+/** General Styles */
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url('../fonts/322021485-HelveticaNeue.eot');
+  src: url('../fonts/322021485-HelveticaNeue.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/322021485-HelveticaNeue.svg#Helvetica Neue') format('svg'),
+  url('../fonts/322021485-HelveticaNeue.woff') format('woff'),
+  url('../fonts/322021485-HelveticaNeue.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+	font-family: "Helvetica Neue";
+	direction: ltr;
+}
+
+a {
+	text-decoration: none;
+}
+
+body, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+.r_separator {
+	border-right: 1px solid #DDDDDD;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+li
+{list-style: none}
+
+#app{ 
+	width: 373px; 
+	overflow: hidden; 
+	background: #fff; 
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	color: #333;
+}
+
+.header {
+	background: url(../imgs/header.jpg) no-repeat center center;
+	height: 48px;
+}
+
+.header .back {
+	display: block;
+	float: left;
+	margin: 14px;
+}
+
+.sub-header {
+	background: #56C0D4;
+	color: #fff;
+	padding: 10px 5px 12px 5px;
+	font-size: 14px;
+	height: 16px;
+	overflow: hidden;
+	position: relative;
+	clear: both;
+	top: -2px;
+}
+
+.sub-header.arrow {
+	padding-bottom: 23px;
+	background-repeat: no-repeat;
+	background-position: 0px 40px;
+}  
+
+.sub-header.arrow.center {  
+	background-image: url(../imgs/sub_header_center.jpg);
+}
+
+.sub-header.arrow.left {  
+	background-image: url(../imgs/sub_header_left.jpg);
+}
+
+.sub-header .refresh {
+	float: right;
+	margin-right: 5px;
+}
+
+.sub-header .total {
+	font-size: 20px;
+	display: inline-block;
+	min-width: 33px;
+	text-align: center;
+}
+
+h1 {
+	color: #5FBFD7;
+	font-size: 21px;
+	font-weight: 100;
+}
