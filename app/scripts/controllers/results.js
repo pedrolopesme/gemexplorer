@@ -9,5 +9,6 @@ angular.module('gemExplorerApp')
     // Injecting results into global scope.
     $scope.searchTerm = $routeParams.searchTerm;
     $scope.foundItems = $scope.client.findAll($scope.searchTerm);
+    $scope.totalItems = $scope.foundItems.length;
 
   });

@@ -6,7 +6,8 @@ describe('Controller: ResultsCtrl', function () {
   beforeEach(module('gemExplorerApp'));
 
   var ResultsCtrl,
-    fake_scope, 
+    fake_scope,
+    fake_results, 
     client_stub;
 
   // Initialize the controller and a mock scope
@@ -17,8 +18,9 @@ describe('Controller: ResultsCtrl', function () {
     
     fake_scope        = $rootScope.$new();
     fake_scope.client = client;
+    fake_results      = [1,2,3,4];
 
-    client_stub       =  sinon.stub(client, "findAll").withArgs(params.searchTerm).returns("my-beautiful-gem");
+    client_stub       =  sinon.stub(client, "findAll").withArgs(params.searchTerm).returns(fake_results);
 
     ResultsCtrl = $controller('ResultsCtrl', {
       $scope: fake_scope,
@@ -29,8 +31,12 @@ describe('Controller: ResultsCtrl', function () {
 
   it('should find all gems accordingly to a given term', function () {
     expect(fake_scope.searchTerm).toMatch('search-my-gem');
-    expect(fake_scope.foundItems).toMatch('my-beautiful-gem');
+    expect(fake_scope.foundItems).toMatch(fake_results);
     expect(client_stub.called).toBeTruthy();
+  });
+
+  it('should count gems found and store it in a scope var', function () {
+    expect(fake_scope.totalItems).toMatch(fake_results.length);
   });
 
 });
