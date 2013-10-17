@@ -1,11 +1,13 @@
 /**
 *  Consumes RubyGem's awesome API.
+*
+*  Author : Pedro Mendes - @pedrolopesme
 */
 var RubyGemsClient = function (){ 
 	
 	/** Public: making curl client and routes public, 
 	*  in order to allow test injection */
-	this.curl 	= new Curl();
+	this.curl 	= Curl;
 	this.routes = RubyGemsRoutes;
 
   /** Public : Finds all gems based on given term */

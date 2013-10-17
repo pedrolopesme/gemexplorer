@@ -1,7 +1,11 @@
 /**
-*  Makes simple XHR calls and return it's responses.
+*  A simple facade to manipulate XHR requests.
+*
+*  Author : Pedro Mendes - @pedrolopesme
 */
-var Curl = function() {
+
+/** XHR Facade  */
+var XHRFacade = function() {
 
 	/** Public: Stores current last request response */
 	this.response = {};
@@ -42,5 +46,26 @@ var Curl = function() {
 		xhr.send(data);
 		return call_resource(url, "POST");
 	};
+
+}
+
+/** Curl object - in fact, a XHRFacade creator. */
+var Curl = {
+
+	instance : undefined,
+
+	/* Keeping only one instance of XHRFacade. */
+	getInstance : function() {
+		this.instance = this.instance || new XHRFacade();
+		return this.instance;
+	},
+
+	get : function(url) {
+		return this.getInstance().get(url);
+	}, 
+
+	post : function(url, data) {
+		return this.getInstance().get(url, data);
+	}
 
 }

@@ -1,7 +1,6 @@
 /**
-*  Build urls based on RubyGem's API. 
-*
-*  Ps: Simple static (and singleton) object.
+*  Simple static (and singleton) object responsible for
+*  build urls based on RubyGem's API. 
 */
 var RubyGemsRoutes = {
 
