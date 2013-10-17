@@ -27,6 +27,7 @@ module.exports = function(config) {
       'app/bower_components/sinon/lib/sinon/**/*.js',
       'app/scripts/*.js',
       'app/scripts/**/*.js',
+      'app/libs/curl/xhr_facade.js',
       'app/libs/curl/curl.js',
       'app/libs/rubygems/routes.js',
       'app/libs/rubygems/client.js',
