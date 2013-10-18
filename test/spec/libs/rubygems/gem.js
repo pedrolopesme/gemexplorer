@@ -5,7 +5,7 @@ describe("Gem object", function() {
   var gemObject, gemJson;
 
   beforeEach(function () {
-    gemJson           = { name: "My Beautiful Gem" };
+    gemJson           = { name: "My Beautiful Gem", version: "1.0.2.3b" };
   	gemObject  				= new Gem(gemJson);
   });
 
@@ -17,8 +17,12 @@ describe("Gem object", function() {
     expect(gemObject.get("whatever")).toMatch(undefined);
   });
 
-  it("shouldn't be able to retrieve a nonexistent property in the given json", function() {
-    expect(gemObject.get("whatever")).toMatch(undefined);
+  it("should format a gem install command", function() {
+    expect(gemObject.gemInstall()).toMatch("gem install " + gemJson.name);
+  });
+
+  it("should format a gemfile command", function() {
+    expect(gemObject.gemfile()).toMatch("gem \"" + gemJson.name + "\", \"~> " + gemJson.version +  "\"" );
   });
 
 });

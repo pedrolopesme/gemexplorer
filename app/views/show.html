@@ -13,7 +13,7 @@
   </div>
 
   <div class="gemInstall">
-    gem install {{gem.get('name')}}
+    {{gem.gemInstall()}}
   </div>
 
   <div class="gemDescription">
@@ -21,8 +21,8 @@
   </div>
 
   <div class="gemfileConfig">
-    Gemfile: <span class="command"> gem “{{gem.get('name')}}”, “~> {{gem.get('version')}}” <span>
-    <a href="javascript:void(0);" class="clipboardCopy"> 
+    Gemfile: <span class="command"> {{gem.gemfile()}} <span>
+    <a href="" class="clipboardCopy" ng-click="copyGemfile()"> 
       copy 
       <img src="imgs/icons/clipboard.jpg" />
     </a> 

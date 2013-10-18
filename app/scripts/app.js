@@ -24,5 +24,5 @@ angular.module('gemExplorerApp', [])
       });
   })
   .config( function($compileProvider){ 
-    $compileProvider.urlSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|chrome-extension):/); 
+    $compileProvider.urlSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|chrome-extension|javascript):/); 
   });

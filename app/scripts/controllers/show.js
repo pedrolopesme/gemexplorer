@@ -6,8 +6,18 @@ angular.module('gemExplorerApp')
   // RubyGemClient - It's public in order to be injectable by tests.
   $scope.client = $scope.client || new RubyGemsClient();
 
-	// Inject params to be used in view
+  // RubyGemClient - It's public in order to be injectable by tests.
+  $scope.clipboard = Clipboarder;
+
+	// Search term
 	$scope.searchTerm = $routeParams.searchTerm;
-	$scope.gem  			= $scope.client.findOne($routeParams.gemName);
+
+	// Gem
+	$scope.gem  = $scope.client.findOne($routeParams.gemName);
+
+	// Copy to clipboard
+	$scope.copyGemfile = function() {
+		$scope.clipboard.copy($scope.gem.gemfile());
+	}
 
 });
