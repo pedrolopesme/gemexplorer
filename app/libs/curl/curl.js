@@ -3,7 +3,6 @@
 *
 *  Author : Pedro Mendes - @pedrolopesme
 */
-
 var Curl = {
 
 	instance : undefined,

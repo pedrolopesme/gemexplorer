@@ -7,21 +7,21 @@
   </div>
 
   <div class="sub-header arrow center">
-    <span class="gemVersion">   V. <b> {{gem.version}} </b> </span>
-    <span class="gemName"> {{gem.name}} </span> <br />
-    <span class="gemDownloads"> <b> {{gem.downloads}} </b> download(s) </span>
+    <span class="gemVersion">   V. <b> {{gem.get('version')}} </b> </span>
+    <span class="gemName"> {{gem.get('name')}} </span> <br />
+    <span class="gemDownloads"> <b> {{gem.get('downloads')}} </b> download(s) </span>
   </div>
 
   <div class="gemInstall">
-    gem install {{gem.name}}
+    gem install {{gem.get('name')}}
   </div>
 
   <div class="gemDescription">
-    {{gem.info}}
+    {{gem.get('info')}}
   </div>
 
   <div class="gemfileConfig">
-    Gemfile: <span class="command"> gem “{{gem.name}}”, “~> {{gem.version}}” <span>
+    Gemfile: <span class="command"> gem “{{gem.get('name')}}”, “~> {{gem.get('version')}}” <span>
     <a href="javascript:void(0);" class="clipboardCopy"> 
       copy 
       <img src="imgs/icons/clipboard.jpg" />
@@ -31,11 +31,11 @@
   <div class="footer">
     <img src="imgs/icons/globe.jpg" />
     <ul>
-      <li> <a target="_blank" href="{{gem.project_uri}}"> rubygems </a> </li>
-      <li> <a target="_blank" href="{{gem.homepage_uri}}"> homepage </a> </li>
-      <li> <a target="_blank" href="{{gem.source_code_uri}}"> source code </a> </li>
-      <li> <a target="_blank" href="{{gem.documentation_uri}}"> docs </a> </li>
-      <li> <a target="_blank" href="{{gem.wiki_uri}}"> wiki </a> </li>
+      <li> <a target="_blank" href="{{gem.get('project_uri')}}"> rubygems </a> </li>
+      <li> <a target="_blank" href="{{gem.get('homepage_uri')}}"> homepage </a> </li>
+      <li> <a target="_blank" href="{{gem.get('source_code_uri')}}"> source code </a> </li>
+      <li> <a target="_blank" href="{{gem.get('documentation_uri')}}"> docs </a> </li>
+      <li> <a target="_blank" href="{{gem.get('wiki_uri')}}"> wiki </a> </li>
     </ul>
   </div>
 

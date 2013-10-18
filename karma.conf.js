@@ -30,8 +30,10 @@ module.exports = function(config) {
       'app/libs/curl/xhr_facade.js',
       'app/libs/curl/curl.js',
       'app/libs/rubygems/routes.js',
+      'app/libs/rubygems/gem.js',
+      'app/libs/rubygems/formatter.js',
       'app/libs/rubygems/client.js',
-      'test/mock/**/*.js',
+      'app/libs/clipboarder/clipboarder.js',
       'test/spec/**/*.js'
     ],
 

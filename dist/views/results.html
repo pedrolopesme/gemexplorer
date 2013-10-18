@@ -13,10 +13,10 @@
 
   <ul id="resultsList">
     <li ng-repeat="gem in foundItems"> 
-      <a href="#/show/{{searchTerm}}/{{gem.name}}" ng-class="medalizer({{$index}});">
+      <a href="#/show/{{searchTerm}}/{{gem.get('name')}}" ng-class="medalizer({{$index}});">
         <img src="imgs/icons/arrow_blue_right.png">
-        <span class="gemName"> {{gem.name}} </span> <br>
-        <span class="gemDownloads"> <b> {{gem.downloads}} </b> download(s) </span>
+        <span class="gemName"> {{gem.get('name')}} </span> <br>
+        <span class="gemDownloads"> <b> {{gem.get('downloads')}} </b> download(s) </span>
         <div class="clearfix"></div>
       </a>
     </li>
