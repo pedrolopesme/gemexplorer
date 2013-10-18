@@ -39,4 +39,22 @@ describe('Controller: ResultsCtrl', function () {
     expect(fake_scope.totalItems).toMatch(fake_results.length);
   });
 
+  it('should add gold class to first gem found', function(){
+    expect(fake_scope.medalizer(0)).toMatch('gold');
+  });
+
+  it('should add silver class to second gem found', function(){
+    expect(fake_scope.medalizer(1)).toMatch('silver');
+  });
+
+  it('should add bronze class to third gem found', function(){
+    expect(fake_scope.medalizer(2)).toMatch('bronze');
+  });
+
+  it('should add "others" class to any gem found after third position', function(){
+    expect(fake_scope.medalizer(3)).toMatch('others');
+    expect(fake_scope.medalizer(4)).toMatch('others');
+    expect(fake_scope.medalizer(5)).toMatch('others');
+  });
+
 });

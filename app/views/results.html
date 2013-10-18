@@ -13,7 +13,7 @@
 
   <ul id="resultsList">
     <li ng-repeat="gem in foundItems"> 
-      <a href="#/show/{{searchTerm}}/{{gem.name}}" class="gold">
+      <a href="#/show/{{searchTerm}}/{{gem.name}}" ng-class="medalizer({{$index}});">
         <img src="imgs/icons/arrow_blue_right.png" />
         <span class="gemName"> {{gem.name}} </span> <br />
         <span class="gemDownloads"> <b> {{gem.downloads}} </b> download(s) </span>
