@@ -29,7 +29,7 @@ Running in your browser
 
 If you want to clone this repository and run directly in your browser, just follow the Google's Getting Started (on how to load an unpacked extension in the Browser) - http://developer.chrome.com/extensions/getstarted.html#unpacked. 
 
-Before do it, you need generate a build a local extension in you local computer. For this, you should navigate to project's root path, and run:
+Before do it, you need generate a local build and load the extension in you local computer. For this, you should navigate to project's root path, and run:
 
 
 ```
