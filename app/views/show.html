@@ -31,11 +31,9 @@
   <div class="footer">
     <img src="imgs/icons/globe.jpg" />
     <ul>
-      <li> <a target="_blank" href="{{gem.get('project_uri')}}"> rubygems </a> </li>
-      <li> <a target="_blank" href="{{gem.get('homepage_uri')}}"> homepage </a> </li>
-      <li> <a target="_blank" href="{{gem.get('source_code_uri')}}"> source code </a> </li>
-      <li> <a target="_blank" href="{{gem.get('documentation_uri')}}"> docs </a> </li>
-      <li> <a target="_blank" href="{{gem.get('wiki_uri')}}"> wiki </a> </li>
+      <li ng-repeat="link in links"> 
+        <a target="_blank" href="{{link.url}}"> {{link.name}} </a> 
+      </li>
     </ul>
   </div>
 

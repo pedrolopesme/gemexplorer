@@ -46,7 +46,7 @@ describe('Controller: ShowCtrl', function () {
     // Asserting
     expect(clipboard_stub.called).toBeTruthy();
 
-    // Restoring singleton properties - other test will like it. :-)
+    // Restoring singleton properties - other tests will like it. :-)
     fake_scope.clipboard.copy.restore();
 
   });

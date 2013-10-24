@@ -15,9 +15,12 @@ angular.module('gemExplorerApp')
 	// Gem
 	$scope.gem  = $scope.client.findOne($routeParams.gemName);
 
+	// Footer Links
+	$scope.links = $scope.gem.getLinks();
+
 	// Copy to clipboard
 	$scope.copyGemfile = function() {
 		$scope.clipboard.copy($scope.gem.gemfile());
-	}
+	}	
 
 });
