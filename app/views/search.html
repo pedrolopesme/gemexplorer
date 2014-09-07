@@ -7,7 +7,9 @@
 	</div>	
 
   <form ng-submit="search()">
-      <input type="text" id="searchTerm" ng-model="searchTerm" size="30" placeholder="Search gem...">
+      <input type="text" id="searchTerm" ng-model="searchTerm" size="20" placeholder="Search gem...">
+      <blockquote>Type and press Enter</blockquote>
+      <span class="glyphicon glyphicon-refresh glyphicon-refresh-animate" ng-show="loadingIcon()"></span>
   </form>
 
   <div class="footer">

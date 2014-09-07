@@ -7,6 +7,18 @@
 
 #search form {
 	margin: 15px 0 45px 0;
+	text-align: center;
+}
+
+#search form input{
+	color: #666;
+}
+
+#search form blockquote{
+	font-style: italic;
+	margin-top: 2px;
+	font-size: 0.65em;
+	color: #999;
 }
 
 #search form #searchTerm {
@@ -17,7 +29,6 @@
 	padding: 10px 0;
 	text-align: center;
 	margin: auto;
-	display: block;
 	width: 323px;
 }
 
@@ -47,4 +58,21 @@
 #search .footer a img {
 	vertical-align: middle;
 	margin-right: 5px;
+}
+
+.glyphicon-refresh{ color: #666; }
+
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
 }
