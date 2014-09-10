@@ -3,8 +3,15 @@
 angular.module('gemExplorerApp')
   .controller('SearchCtrl', function ($scope, $location) {
 
+  	$scope.submitform = false;
+    
+    $scope.loadingIcon = function(){
+    	return $scope.submitform;
+    };
+
     $scope.search = function() {
-			$location.path('/results/' + $scope.searchTerm);
-		};
+    	$scope.submitform = true;
+		$location.path('/results/' + $scope.searchTerm);
+	};
 
   });
