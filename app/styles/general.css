@@ -75,7 +75,7 @@ li
 .sub-header {
 	background: #56C0D4;
 	color: #fff;
-	padding: 10px 5px 12px 5px;
+	padding: 25px 5px 11px;
 	font-size: 14px;
 	height: 16px;
 	overflow: hidden;
@@ -85,9 +85,9 @@ li
 }
 
 .sub-header.arrow {
-	padding-bottom: 39px;
+	padding-bottom: 30px;
 	background-repeat: no-repeat;
-	background-position: 0px 40px;
+	background-position: 0 62px;
 }  
 
 .sub-header.arrow.center {  
